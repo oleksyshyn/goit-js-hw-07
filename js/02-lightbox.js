@@ -26,11 +26,9 @@ function onSelectedGalleryCard(event) {
     if (event.target.nodeName !== 'IMG') {
         return;
     }
+}
 
-    const gallary = new SimpleLightbox('.gallery a', {
+const gallary = new SimpleLightbox('.gallery a', {
         captionsData: 'alt',
         captionDelay: 250,
     });
-    
-}
-
